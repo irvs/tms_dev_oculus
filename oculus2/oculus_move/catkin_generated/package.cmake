@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "oculus_move")
+set(oculus_move_MAINTAINER "Yoonseok Pyo <passionvirus@gmail.com>")
+set(oculus_move_DEPRECATED "")
+set(oculus_move_VERSION "1.0.0")
+set(oculus_move_BUILD_DEPENDS "roscpp" "rospy" "tf" "std_msgs" "geometry_msgs" "tms_msg_db" "nav_msgs" "message_generation" "image_geometry" "cv_bridge" "ecto_opencv")
+set(oculus_move_RUN_DEPENDS "roscpp" "rospy" "tf" "std_msgs" "geometry_msgs" "tms_msg_db" "nav_msgs" "message_runtime")
+set(oculus_move_BUILDTOOL_DEPENDS "catkin")

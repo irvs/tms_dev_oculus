@@ -1,0 +1,32 @@
+roslaunch urdf_tutorial display.launch model:=urdf/01-myfirst.urdf 
+
+
+<?xml version="1.0"?>
+<robot name="myfirst">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://pr2_description/meshes/gripper_v0/l_finger.dae"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+      <material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+     </visual>
+  </link>
+</robot>
+
+
+
+
+display.launch
+
+<launch>
+<arg name="model" />
+<arg name="gui" default="False" />
+<param name="robot_description" textfile="$(arg model)" />
+<param name="use_gui" value="$(arg gui)"/>
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/urdf.vcg" />
+</launch>

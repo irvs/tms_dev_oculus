@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: oculus_move
+Description: Description of oculus_move
+Version: 1.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: roscpp std_msgs geometry_msgs tms_msg_db

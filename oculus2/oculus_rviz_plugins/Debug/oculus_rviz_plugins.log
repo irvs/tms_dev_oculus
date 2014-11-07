@@ -1,0 +1,16 @@
+﻿2014/10/27 9:45:00 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Ryo\Desktop\OculusSDK0.3.2\Samples\oculus_rviz_plugins\oculus_rviz_plugins.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include /IC:\Users\Ryo\Desktop\OculusSDK0.3.2\LibOVR\Include /I"C:\Users\Ryo\Desktop\OculusSDK0.3.2\OGRE\OgreSDK_vc11_v1-9-0\boost" /I"C:\Users\Ryo\Desktop\OculusSDK0.3.2\OGRE\OgreSDK_vc11_v1-9-0\include\OGRE" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\fixed_view_controller.cpp src\oculus_display.cpp src\ogre_oculus.cpp
+         ogre_oculus.cpp
+     1>c:\users\ryo\desktop\oculussdk0.3.2\samples\oculus_rviz_plugins\include\oculus_rviz_plugins\ogre_oculus.h(16): fatal error C1083: include ファイルを開けません。'OGRE/OgreQuaternion.h':No such file or directory
+         oculus_display.cpp
+     1>c:\users\ryo\desktop\oculussdk0.3.2\samples\oculus_rviz_plugins\src\oculus_display.cpp(33): fatal error C1083: include ファイルを開けません。'QWidget':No such file or directory
+         fixed_view_controller.cpp
+     1>c:\users\ryo\desktop\oculussdk0.3.2\samples\oculus_rviz_plugins\src\fixed_view_controller.cpp(32): fatal error C1083: include ファイルを開けません。'OGRE/OgreCamera.h':No such file or directory
+         コードを生成中...
+     1>プロジェクト "C:\Users\Ryo\Desktop\OculusSDK0.3.2\Samples\oculus_rviz_plugins\oculus_rviz_plugins.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:01.02

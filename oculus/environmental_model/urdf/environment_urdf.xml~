@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="environmental">
+
+	<!-- ==================== Planar joint ==================== -->
+	
+    <link name="start_position"/>
+
+	<joint name="base_footprint_joint" type="fixed">
+        <parent link="start_position"/>
+		<child link="base_link"/>
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	</joint>
+
+	<!-- ==================== Vehicle ==================== -->
+
+	<link name="base_link"> <!-- Vehicle -->
+		<visual>
+			<geometry>
+        <mesh filename="package://environmental_model/model/room/floor928.dae"/>
+			</geometry>
+			<origin xyz="0 0 0" rpy="0 0 0"/> <!-- Offset for wheels already included in the mesh definition -->
+			<material name="grey"/>
+		</visual>
+		<collision>
+			<geometry>
+        <mesh filename="package://environmental_model/model/room/floor928.dae"/>
+			</geometry>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0.0375" rpy="0 0 0"/>
+			<mass value="27"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+</robot>

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: oculus_rviz_plugins
+Description: Description of oculus_rviz_plugins
+Version: 0.0.8
+Cflags: -I/usr/local/include -I/opt/ros/indigo/share/OculusSDK/../../include/OculusSDK/Include
+Libs: -L/usr/local/lib -loculus_rviz_plugins -lovr
+Requires: rviz
